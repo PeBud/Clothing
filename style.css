@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+body {
+  background: black;
+  box-shadow: 0px 10px 15px grey;
+  color: slategrey;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  min-height: 14vh;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 2rem;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+}
+
+nav a {
+text-decoration: none;
+}
+
+section {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+}
+
+#sewingList {
+  color: ghostwhite;
+  font-size: 20px;
+}
+
+.dropButton {
+  background-color: yellow;
+  color: white;
+  padding: 18px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: darkblue;
+  padding: 14px 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: pink;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropButton{
+  background-color: blue;
+}
